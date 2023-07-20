@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+.navbar{
+    background-color: #006400;
+}
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+.navbar li span {
+    color: #808000;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline;
+    margin:-3.5rem;
+}
+.navbar li {
+    display: inline;
+    margin: 1.9rem;
+    cursor: pointer;
+    color: white;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+/* presantation section */
+
+.presantation{
+    text-align: center;
+}
+
+.presantation h1 {
+   text-transform: uppercase;
+   margin: 4rem;
+   font-size: 1.5rem;
+   font-weight: 200;
+}
+
+.presant{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.presant-image img{
+    width: 100%;
+}
+
+.presant-descript {
+    border: 1px solid #808000;
+}
+.presant-descript h2{
+    text-align: center;
+    margin: 10rem 10rem 0rem 10rem;
+    color: #808000;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+/* icon descript section */
+
+.short-descript, .short-descript p{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0rem 1rem 0rem;
+}
+
+.short-descript p {
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+/* long descript section */
+
+.long-descript, .nos-tarifs, .nous-rejoindre{
+    text-align: center;
+    background-color: #006400;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.long-descript h2, .nos-tarifs h2{
+   color: #94812B;
+   text-transform: uppercase;
+   font-weight: 200;
+   font-size: 1.4rem;
+}
+
+.long-descript p {
+    color: white;
+    text-transform: capitalize;
+    font-weight: lighter;
+    padding: 2rem 10rem 0 10rem;
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    font-family: 'Yaldevi Colombo';
+}
+
+/* section des forfaits */
+
+/* btn de forfaits */
+.btn-forfait {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.btn-forfait button{
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 20rem;
+    color: #808000;
+    border: 1px double black;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: white;
+}
+.nos-forfaits-winter{
+    height: 70rem;
+    background-image: url('https://images.pexels.com/photos/6847695/pexels-photo-6847695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');    
+    background-attachment: fixed;        
+    /* background-size: cover; */
+}
+
+.nos-forfaits-summer {
+    height: 70rem;
+    background-image: url('https://images.pexels.com/photos/11440267/pexels-photo-11440267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');    background-attachment: fixed;
+    /* background-size: cover; */
+}
+
+.heading h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 10rem;
+}
+
+.forfaits{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.forfait-descript{
+    border: 1px solid black;
+    background-color: white;
+    margin: 2rem;
+}
+
+.forfait-descript img {
+    width: 100%;
+}
+.forfait-descript p, h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 1.5rem;
+}
+
+.forfait-descript h2 {
+    color: #006400;
+    font-size: 2rem;
+    padding-top: 2rem;
+    margin: 1rem;
+}
+.prix{
+    color: #94812B;
+    margin-bottom: 5rem;
+}
+
+.forfait-descript span {
+    padding: 2rem;
+}
+
+.plus{
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: end;
+    cursor: pointer;
+}
+
+/* Tarifs section */
+.nos-tarifs h2 {
+    font-weight: bold;
+    padding: 2rem 10rem 0 10rem;
+}
+
+.nos-tarifs p {
+    color: white;
+    text-transform: capitalize;
+    font-weight: lighter;
+    padding: 2rem 10rem 0rem 10rem;
+    line-height: 0.5rem;
+    font-size: 1rem;
+}
+
+/* avis */
+
+.avis{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 4rem;
+}
+
+.titre-avis img{
+    width: 50%;
+    border-radius: 60rem;
+    rotate: -30deg;
+}
+
+.titre-avis h1 {
+    rotate: -30deg;
+    margin-top: 1rem;
+    width: 50%;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-left: 5rem;
+}
+
+.avis-descrip{
+    text-align: justify;
+    padding: 4rem;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.author{
+    color: #006400;
+    padding-top: 2rem;
+    font-weight: bold;
+}
+
+/* Section nous rejoindre */
+
+.nous-rejoindre p{
+    color: white;
+    text-transform: uppercase;
+    padding: 2rem;
+}
+
+.nous-rejoindre button {
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 15rem;
+    color: #808000;
+    border: 1px double black;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: white;
+}
+
+/* double section */
+
+.double-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.reservation{
+    padding: 2rem;
+}
+.reservation button {
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 15rem;
+    background-color: #006400;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.reservation p{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.contact, .partenaire{
+    margin-top: 2rem;
+}
+
+.partenaire h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1.4rem;
+}
+
+.partenaire-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.partenaire-image img{
+    width: 70%;
+}
+
+/* responsive */
+
+@media only screen and (min-width: 640px) and (max-width:768px) {
+    /* navbar */    
+        .navbar li span {
+            font-size: 1rem;
+            margin: -1.4rem;
+        }
+        .navbar li {
+            margin: 1.5rem;
+            font-size: 10px;
+        }
+    
+        .presantation h1 {
+            font-size: 1.3rem;
+        }
+    
+        .presant-descript h2 {
+            margin: 5rem 0rem 0rem 0rem;
+            font-size: 1rem;
+        }
+    
+        /* long descript section */
+    
+        .long-descript h2,
+        .nos-tarifs h2 {
+            font-size: 1.2rem;
+        }
+    
+        .long-descript p {
+            padding: 2rem 0rem 0 0rem;
+            line-height: 1.2rem;
+            font-size: 1rem;
+        }
+        .nos-forfaits-winter, .nos-forfaits-summer {
+            background-size: cover;
+            height: 85rem;
+        }
+        .heading h1 {
+            font-size: 1rem;
+            padding: 7rem 2rem 7rem 2rem;
+        }
+        .forfaits {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        /* Tarifs section */    
+        .nos-tarifs p {
+            padding: 2rem 1rem 0rem 1rem;
+            line-height: 1.5rem;
+        }
+
+        /* avis */        
+        .titre-avis h1 {
+            margin-top: 1rem;
+            width: 100%;
+            font-size: 1rem;
+            margin-left: -5rem;
+        }
+    
+        .avis-descrip {
+            padding: 1rem;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+}
