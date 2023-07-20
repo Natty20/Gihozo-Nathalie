@@ -6,28 +6,33 @@
 /* navbar */
 .navbar{
     background-color: #006400;
+    text-transform: uppercase;
+    color: white;
+    font-weight: lighter;
+    padding: 1rem;
 }
 .navbar ul {
     display: flex;
     justify-content: space-around;
+    cursor: pointer;
 
 }
-.navbar li span {
+.logo {
     color: #808000;
     font-size: 2rem;
-    text-transform: uppercase;
     font-weight: bold;
-    display: inline;
-    margin:-3.5rem;
+    margin:1.2rem;
 }
 .navbar li {
     display: inline;
     margin: 1.9rem;
-    cursor: pointer;
-    color: white;
     font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: lighter;
+}
+
+.navbar li:hover {
+    opacity: 3;
+    transition: 0.3s ease-out;
+    transform: scale(1.1);
 }
 
 /* presantation section */
@@ -46,9 +51,16 @@
 .presant{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    
 }
 .presant-image img{
     width: 100%;
+    cursor: pointer;
+}
+
+.presant-image img:hover {
+    transition: 0.6s ease-in;
+    transform: scale(1.1);
 }
 
 .presant-descript {
@@ -61,6 +73,7 @@
     text-transform: uppercase;
     font-weight: lighter;
     font-size: 1.5rem;
+    /* transition: all 2s; */
 }
 
 /* icon descript section */
@@ -69,6 +82,7 @@
     display: flex;
     justify-content: space-around;
     margin: 2rem 0rem 1rem 0rem;
+    transition: all 2s; 
 }
 
 .short-descript p {
@@ -98,7 +112,7 @@
     font-weight: lighter;
     padding: 2rem 10rem 0 10rem;
     line-height: 1.5rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: lighter;
     font-family: 'Yaldevi Colombo';
 }
@@ -120,6 +134,17 @@
     text-transform: uppercase;
     cursor: pointer;
     background-color: white;
+}
+
+.btn-forfait button:hover, .nous-rejoindre button:hover {
+    color: white;
+    background-color: #006400;
+    transition: 0.3s ease-out;
+    transform: scale(1.1);
+}
+
+.btn-forfait:active, .nous-rejoindre button:active {
+    transform: translateY(2px);
 }
 .nos-forfaits-winter{
     height: 70rem;
@@ -145,12 +170,21 @@
 .forfaits{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    cursor: pointer;
+    
 }
 
 .forfait-descript{
     border: 1px solid black;
     background-color: white;
     margin: 2rem;
+    opacity: 0.8;
+}
+
+.forfait-descript:hover {
+    transition: 0.3s ease-out;
+    transform: scale(1.1);
+    opacity: 1;
 }
 
 .forfait-descript img {
@@ -303,16 +337,40 @@
     width: 70%;
 }
 
+/* Footer */
+
+.footer{
+    background-color: #006400;
+}
+.links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5rem;
+}
+
+.links ul li {
+    list-style: none;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.links h3{
+    text-transform: uppercase;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 /* responsive */
 
 @media only screen and (min-width: 640px) and (max-width:768px) {
     /* navbar */    
-        .navbar li span {
+        .logo {
             font-size: 1rem;
-            margin: -1.4rem;
         }
         .navbar li {
-            margin: 1.5rem;
+            margin: 1.02rem;
             font-size: 10px;
         }
     
@@ -368,5 +426,30 @@
             padding: 1rem;
             font-size: 1.2rem;
             margin-bottom: 3rem;
+        }
+
+        /* Footer */
+    
+        .links {
+            grid-template-columns: repeat(2, 1fr);
+            text-align: center;
+            gap: 5rem;
+            padding: 2rem;
+        }
+    
+        .links ul li {
+            list-style: none;
+            line-height: 2rem;
+            font-size: 1.5rem;
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+    
+        .links h3 {
+            text-transform: uppercase;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1.5rem;
         }
 }
